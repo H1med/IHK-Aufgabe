@@ -128,3 +128,17 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# VS Code
+.vscode/
+.history/
+
+# H2 Database files
+*.h2.db
+*.mv.db
+*.trace.db
+
+# IntelliJ IDEA
+*.iml
+*.iws
+.idea/
