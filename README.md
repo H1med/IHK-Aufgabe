@@ -9,10 +9,7 @@
     ```
     cd demo/src/main/java/com/example/demo
     ```
-2. Führe die Datei `RatingAppApplication.java` aus, um die Spring Boot Anwendung zu starten:
-    ```
-    java RatingAppApplication.java
-    ```
+2. Führe die Datei `RatingAppApplication.java` aus, um die Spring Boot Anwendung zu starten
 
 ### Schritt 2: Starten der Angular Anwendung
 
