@@ -1,0 +1,27 @@
+<div>
+    <div class="rating-stats">
+        <p><strong>Anzahl der Bewertungen:</strong> {{ ratings.length }}</p>
+        <p>
+            <strong>Durchschnittliche Bewertung:</strong>
+            {{ getAverageRating().toFixed(2) }}
+        </p>
+    </div>
+
+    <lux-list>
+        <ng-container *ngFor="let rating of ratings">
+            <lux-list-item
+                [luxTitle]="'Bewertung: ' + rating.rating"
+                [luxSubTitle]="rating.feedback"
+                [luxSelected]="false"
+            >
+                <lux-list-item-icon>
+                    <lux-icon
+                        luxIconName="lux-interface-favorite-star"
+                        class="lux-color-blue"
+                    >
+                    </lux-icon>
+                </lux-list-item-icon>
+            </lux-list-item>
+        </ng-container>
+    </lux-list>
+</div>

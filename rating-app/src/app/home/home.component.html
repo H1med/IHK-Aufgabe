@@ -1,0 +1,16 @@
+<div class="home">
+    <lux-tile-ac
+        luxLabel="Bewertung abgeben"
+        luxSubTitle="Hier kannst du eine Bewertung abgeben."
+        (luxClicked)="router.navigate(['/addratings'])"
+    >
+        <lux-icon luxIconName="lux-cog"></lux-icon>
+    </lux-tile-ac>
+    <lux-tile-ac
+        luxLabel="Bewertung einsehen"
+        luxSubTitle="Hier kannst du die Bewertungen einsehen."
+        (luxClicked)="router.navigate(['/ratings'])"
+    >
+        <lux-icon luxIconName="lux-cog"></lux-icon>
+    </lux-tile-ac>
+</div>

@@ -1,0 +1,30 @@
+<div class="bewertung">
+    <lux-card luxTitle="Bewertung abgeben">
+        <lux-card-content>
+            <lux-slider-ac
+                luxLabel="Bewertung"
+                luxPlaceholder="Geben Sie eine Bewertung von 1 bis 5 ab"
+                [luxRequired]="true"
+                [luxVertical]="false"
+                [luxMin]="1"
+                [luxMax]="5"
+                [(luxValue)]="grading"
+            >
+            </lux-slider-ac>
+            <lux-textarea-ac
+                luxLabel="Feedback"
+                luxPlaceholder="Geben Sie Ihr Feedback ein"
+                [luxMaxLength]="255"
+                [(luxValue)]="feedback"
+            >
+            </lux-textarea-ac>
+            <lux-button
+                luxLabel="Abschicken"
+                luxColor="primary"
+                [luxRaised]="true"
+                (luxClicked)="onSubmit()"
+            >
+            </lux-button>
+        </lux-card-content>
+    </lux-card>
+</div>

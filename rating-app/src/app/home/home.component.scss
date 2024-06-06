@@ -1,0 +1,10 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    lux-tile-ac {
+        max-width: 400px;
+        margin: 16px auto;
+    }
+}
