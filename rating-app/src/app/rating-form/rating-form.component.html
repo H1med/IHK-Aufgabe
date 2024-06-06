@@ -16,6 +16,8 @@
                 luxPlaceholder="Geben Sie Ihr Feedback ein"
                 [luxMaxLength]="255"
                 [(luxValue)]="feedback"
+                luxErrorMessage="Nur Buchstaben, Zahlen und bestimmte Satzzeichen sind erlaubt."
+                [luxControlValidators]="[specialCharacterValidator]"
             >
             </lux-textarea-ac>
             <lux-button

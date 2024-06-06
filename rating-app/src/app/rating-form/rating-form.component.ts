@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ValidatorFn, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 
 import { Rating } from '../rating';
@@ -19,7 +20,17 @@ export class RatingFormComponent {
         private ratingService: RatingServiceService,
     ) {}
 
+    specialCharacterValidator: ValidatorFn =
+        Validators.pattern('[\\w\\s.,?!-]*');
+    isFeedbackValid(): boolean {
+        return !/[^\w\s.,?!-]/.test(this.feedback);
+    }
+
     onSubmit() {
+        if (!this.isFeedbackValid()) {
+            return;
+        }
+
         const rating = new Rating(this.feedback, this.grading);
         this.ratingService
             .save(rating)
