@@ -1,7 +1,7 @@
 .rating-stats {
     display: flex;
-    justify-content: center; /* Zentriert die Rating-Statistiken horizontal */
-    gap: 4rem; /* Abstand zwischen den beiden P-Elementen */
+    justify-content: center;
+    gap: 4rem;
     margin: 1rem;
 }
 
@@ -12,12 +12,12 @@
 lux-list {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Zentriert den Inhalt */
+    align-items: center;
     padding: 0;
 }
 
 lux-list-item {
-    width: 80%; /* Die Breite der Listenelemente auf 80% der übergeordneten Breite festlegen */
-    margin: 0.5rem 0; /* Abstand zwischen den Listenelementen */
-    padding: 0.5rem; /* Reduzierte Größe der Listenelemente */
+    width: 80%;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
 }
